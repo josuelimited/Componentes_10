@@ -1,0 +1,22 @@
+.nav
+{
+    display: flex;
+    background-color: #d1e79e;
+    justify-content: flex-end;
+}
+
+a
+{
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.header__nav-link
+{
+  font-size: 20px;
+  border-bottom: 3px solid #abb1ab;
+}
+.nav-cel
+{
+  color: black;
+}
