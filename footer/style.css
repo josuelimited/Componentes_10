@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.piepagina {
+    width: 100%;
+    background-color: rgb(219, 153, 11);
+    color: white;
+    padding: 20px;
+}
+
+.piepagina__columnas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.piepagina__columna {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.piepagina__heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.piepagina__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.piepagina__item {
+    margin-bottom: 5px;
+}
+
+.piepagina__link-item {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.piepagina__link-item:hover {
+    color: #e0e0e0;
+}
+
+.piepagina__derechosautor {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .piepagina__columnas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .piepagina__columna {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor de la lista para darle un ancho máximo */
+.task-list-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Bloque: Lista de tareas */
+.task-list {
+  display: flex;
+  flex-direction: column; /* Apila los ítems verticalmente */
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  gap: 15px; /* Crea un espacio uniforme entre cada ítem */
+}
+
+/* Elemento: Ítem de la lista */
+.task-list__item {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center;
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.task-list__item:hover {
+  background-color: #d8e1e7;
+}

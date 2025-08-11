@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Bloque: Card */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Elemento: Título de la Card */
+.card__title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Bloque: Formulario de contacto */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Elementos del formulario */
+.contact-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__group--full-width {
+  flex: 1 1 100%;
+}
+
+.contact-form__label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.contact-form__textarea {
+  resize: vertical;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.contact-form__button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.contact-form__button:hover {
+  background-color: #0056b3;
+}

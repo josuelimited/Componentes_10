@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.pricing-section {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pricing-section__title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+/* Contenedor Flexbox para las tarjetas */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se apilen en pantallas pequeñas */
+}
+
+/* Tarjeta de precios */
+.pricing-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+
+}
+
+
+
+.pricing-card__title {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.pricing-card__price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.pricing-card__period {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+}
+
+.pricing-card__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.pricing-card__features li {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.pricing-card__features li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.pricing-card__button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-card__button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la tarjeta destacada */
+.pricing-card--featured {
+  background-color: #34495e;
+  color: white;
+
+}
+
+.pricing-card--featured .pricing-card__title,
+.pricing-card--featured .pricing-card__price,
+.pricing-card--featured .pricing-card__features li {
+  color: white;
+}
+
+.pricing-card--featured .pricing-card__price {
+  color: #2ecc71;
+}
+
+.pricing-card--featured .pricing-card__button {
+  background-color: #2ecc71;
+}
+
+.pricing-card--featured .pricing-card__button:hover {
+  background-color: #27ae60;
+}
+

@@ -1,0 +1,37 @@
+/* Contenedor principal para centrar y organizar */
+.section-header-container {
+  max-width: 900px;
+  margin: 40px auto; /* Centra el contenedor */
+  padding: 0 20px;
+}
+
+/* Bloque: Encabezado de sección */
+.section-header {
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 20px; /* Espacio entre el ícono y el título */
+  margin-bottom: 10px; /* Espacio antes del elemento decorativo */
+}
+
+.section-header__icon {
+  width: 50px; /* Ajusta el tamaño de la imagen */
+  height: 50px;
+  object-fit: contain; /* Asegura que la imagen se adapte sin distorsionarse */
+}
+
+.section-header__title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Elemento decorativo */
+.section-header__decoration {
+  width: 150px; /* Ancho de la línea decorativa */
+  height: 4px; /* Grosor de la línea */
+  background: linear-gradient(90deg, #3498db, #2980b9); /* Degradado de color */
+  border-radius: 2px;
+}
